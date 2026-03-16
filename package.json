@@ -1,0 +1,30 @@
+{
+  "name": "claude-rag-autosync",
+  "version": "1.0.0",
+  "description": "Sistema de memória contínua automática para Claude Code com integração RAG",
+  "main": "src/scripts/auto-memory-extractor.js",
+  "scripts": {
+    "test": "node src/scripts/auto-memory-extractor.js",
+    "status": "bash src/scripts/sync-rag.sh status",
+    "sync": "bash src/scripts/sync-rag.sh process",
+    "clear": "bash src/scripts/sync-rag.sh clear"
+  },
+  "keywords": [
+    "claude",
+    "rag",
+    "memory",
+    "autosync",
+    "embeddings",
+    "vector-database",
+    "mcp"
+  ],
+  "author": "Tiago Gomes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiago-gomes/claude-rag-autosync.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

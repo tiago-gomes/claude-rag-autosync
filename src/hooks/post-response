@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Post-response Hook - Auto Memory Extraction (RAG Integration)
+# Extrai memórias automaticamente após cada resposta e enfileira para RAG
+#
+
+RESPONSE="$1"
+
+# Pular respostas muito curtas
+if [ ${#RESPONSE} -lt 200 ]; then
+  exit 0
+fi
+
+# Executar extrator automático (em background para não bloquear)
+node ~/.claude/memory/scripts/auto-memory-extractor.js "$RESPONSE" 2>/dev/null &
+
+exit 0

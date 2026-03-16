@@ -1,0 +1,20 @@
+{
+  "name": "@claude/mcp-server-memory-rag",
+  "version": "1.0.0",
+  "description": "MCP server for Claude CLI RAG memory system",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "mcp-server-memory-rag": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["mcp", "memory", "rag", "claude"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
